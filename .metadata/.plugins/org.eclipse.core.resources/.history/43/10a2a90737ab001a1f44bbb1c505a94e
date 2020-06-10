@@ -1,0 +1,5 @@
+package com.test.sat0613.action;
+
+public interface Action {
+
+}

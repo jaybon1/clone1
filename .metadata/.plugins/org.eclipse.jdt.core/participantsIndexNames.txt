@@ -1,0 +1,3 @@
+INDEX VERSION 1.131
+C:\programming\git\clone1\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2681748970.index
+\sat0613\src
