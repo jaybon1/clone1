@@ -1,8 +1,2 @@
 INDEX VERSION 1.4+C:\programming\git\clone1\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
 3700518529.index
-2854253215.index
-2481098188.index
-2781005848.index
-2681748970.index
-1015484254.index
-4097844692.index

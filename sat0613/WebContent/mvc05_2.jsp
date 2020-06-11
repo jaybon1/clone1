@@ -20,6 +20,6 @@
 		
 	</div>
 	
-	<a href="mvc06_1.jsp">mvc06_1로 이동</a>
+	<a href="ajaxTest1.jsp">ajaxTest1로 이동</a>
 </body>
 </html>
