@@ -15,7 +15,7 @@
 
 <!-- 
 
-	get타입 // 요청할 주소 ajaxResponse.jsp?data=ajaxTest9
+	get타입 // 요청할 주소 ajaxResponse4.jsp?data=ajaxTest9
 
 	type : "",
 	url : "",
@@ -28,15 +28,28 @@
 
 	<script>
 	
-		function start() {
-			
-			
-			
-		}
+	function start() {
+		
+		$.ajax({
+
+			type : "get",
+			url : "ajaxResponse4.jsp?data=ajaxTest9",
+			data : {"name" : "ajaxTest9"},
+			contentType : 'text/plain; charset=UTF-8',
+			dataType : "text"
+
+		}).done(function(result) {
+			alert(result);
+		}).fail(function(result) {
+			alert("실패");
+		});
+
+	
+}
 		
 	</script>
 	
-	<a href="ajaxJson1jsp">ajaxJson1로 이동</a>
+	<a href="ajaxJson1.jsp">ajaxJson1로 이동</a>
 
 </body>
 </html>

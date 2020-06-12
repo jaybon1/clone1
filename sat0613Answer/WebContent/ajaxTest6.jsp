@@ -33,7 +33,19 @@
 	
 		function start() {
 			
-			
+			$.ajax({
+
+				type : "post",
+				url : "ajaxResponse3.jsp",
+				data : {"name" : "ajaxTest6"},
+				contentType : 'text/plain; charset=UTF-8',
+				dataType : "text"
+
+			}).done(function(result) {
+				alert(result);
+			}).fail(function(result) {
+				alert("실패");
+			});
 			
 		}
 		

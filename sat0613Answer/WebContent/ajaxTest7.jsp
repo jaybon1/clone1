@@ -34,16 +34,26 @@
  -->
 
 	<script>
-	
-		function start() {
-			
-			
-			
-		}
+	function start() {
 		
+		$.ajax({
+
+			type : "post",
+			url : "/sat0613Answer/test?cmd=ajax7",
+			data : {"name" : "ajaxTest7"},
+			contentType : 'text/plain; charset=UTF-8',
+			dataType : "text"
+
+		}).done(function(result) {
+			alert(result);
+		}).fail(function(result) {
+			alert("실패");
+		});
+		
+	}
 	</script>
 	
-	<a href="ajaxTest8.jsp">ajaxTest9로 이동</a>
+	<a href="ajaxTest8.jsp">ajaxTest8로 이동</a>
 
 </body>
 </html>

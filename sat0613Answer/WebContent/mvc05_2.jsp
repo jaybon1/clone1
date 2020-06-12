@@ -17,6 +17,7 @@
 		<h1>mvc05_2 페이지 입니다</h1>
 		
 	<!-- today 쿠키값 출력하기 -->
+	${cookie.today.value}
 		
 	</div>
 	

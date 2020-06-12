@@ -31,7 +31,7 @@
 	
 	데이터를 Ajax8Action에서 출력해보세요.
 	
-	데이터를 다시 이 페이지로 받아보세요. (받을 데이터 = ajaxTest8)
+	데이터를 다시 이 페이지로 받아보세요. (받을 데이터 = ajaxTest8return)
 	
  -->
 
@@ -39,7 +39,20 @@
 	
 		function start() {
 			
-			
+				$.ajax({
+
+					type : "post",
+					url : "/sat0613Answer/test?cmd=ajax8",
+					data : {"name" : "ajaxTest8"},
+					contentType : 'text/plain; charset=UTF-8',
+					dataType : "text"
+
+				}).done(function(result) {
+					alert(result);
+				}).fail(function(result) {
+					alert("실패");
+				});
+
 			
 		}
 		

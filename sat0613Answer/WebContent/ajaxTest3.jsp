@@ -37,7 +37,20 @@
 	
 		function start() {
 			
-			
+				
+				$.ajax({
+					
+					type: "get",
+					url: "/sat0613Answer/test?cmd=ajax3",
+					data : {"name" : "ajaxTest3"},
+					contentType : 'text/plain; charset=UTF-8',
+					dataType: "text"
+					
+				}).done(function(result) {
+					alert(result);
+				}).fail(function(result) {
+					alert("실패");
+				});
 			
 		}
 		

@@ -11,7 +11,7 @@
 <body>
 
 	<button onclick="start()" type="button"
-		class="btn btn-primary btn-block">ajaxJson1버튼</button>
+		class="btn btn-primary btn-block">ajaxJson2버튼</button>
 
 <!-- 
 
@@ -35,15 +35,26 @@
 
 	<script>
 	
-		function start() {
-			
-			
-			
-		}
-		
+			function start() {
+				
+				$.ajax({
+
+					type : "post",
+					url : "/sat0613Answer/test?cmd=ajaxJson2",
+					data : JSON.stringify({"name" : "ajaxJson2"}),
+					contentType : 'application/json; charset=UTF-8',
+					dataType : "json"
+
+				}).done(function(result) {
+					console.log(result);
+					alert(result);
+				}).fail(function(result) {
+					alert("실패");
+				});
+				
+			}
+
 	</script>
-	
-	<a href="ajaxJson2.jsp">ajaxJson2로 이동</a>
 
 </body>
 </html>

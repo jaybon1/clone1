@@ -30,13 +30,25 @@
  -->
 
 	<script>
-	
-		function start() {
-			
-			
-			
-		}
-		
+
+			function start() {
+				
+				$.ajax({
+					
+					type: "get",
+					url: "ajaxResponse1.jsp",
+					data : {"name" : "ajaxTest2"},
+					contentType : 'text/plain; charset=UTF-8',
+					dataType: "text"
+					
+				}).done(function(result) {
+					alert(result);
+				}).fail(function(result) {
+					alert("실패");
+				});
+				
+			}
+
 	</script>
 	
 	<a href="ajaxTest3.jsp">ajaxTest3로 이동</a>

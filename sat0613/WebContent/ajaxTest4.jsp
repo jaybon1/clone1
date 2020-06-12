@@ -29,7 +29,7 @@
 	
 	action이름은 Ajax4Action
 	
-	데이터를 Ajax4Action에서 출력해보세요.
+	데이터를 Ajax4Action에서 출력해보고,
 	
 	데이터를 다시 이 페이지로 받아보세요. (받을 데이터 = ajaxTest4return)
 	

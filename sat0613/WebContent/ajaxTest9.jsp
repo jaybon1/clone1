@@ -22,7 +22,7 @@
 	contentType : 'text/plain; charset=UTF-8',
 	dataType : "text"
 	
-	ajaxResponse4.jsp로  데이터를 보내보세요.
+	ajaxResponse4.jsp로  데이터를 보내서 출력해보세요.
 	
  -->
 
@@ -36,7 +36,7 @@
 		
 	</script>
 	
-	<a href="ajaxJson1jsp">ajaxJson1로 이동</a>
+	<a href="ajaxJson1.jsp">ajaxJson1로 이동</a>
 
 </body>
 </html>

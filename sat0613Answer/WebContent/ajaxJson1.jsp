@@ -37,7 +37,19 @@
 	
 		function start() {
 			
-			
+			$.ajax({
+
+				type : "post",
+				url : "/sat0613Answer/test?cmd=ajaxJson1",
+				data : JSON.stringify({"name" : "ajaxJson1"}),
+				contentType : 'application/json; charset=UTF-8',
+				dataType : "text"
+
+			}).done(function(result) {
+				alert(result);
+			}).fail(function(result) {
+				alert("실패");
+			});
 			
 		}
 		

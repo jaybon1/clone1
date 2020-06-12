@@ -1,3 +1,4 @@
+<%@page import="java.io.BufferedReader"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -17,6 +18,7 @@
 		<h1>mvc03_2 페이지 입니다</h1>
 		
 	<!-- today 파라미터 출력하기 -->
+	${param.today }
 		
 	</div>
 	

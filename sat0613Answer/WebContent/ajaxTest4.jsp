@@ -13,7 +13,7 @@
 	<button onclick="start()" type="button"
 		class="btn btn-primary btn-block">ajaxTest4버튼</button>
 
-<!-- 
+	<!-- 
 
 	get타입 // 요청할 주소 URI // 데이터 {"name" : "ajaxTest4"}
 
@@ -36,15 +36,25 @@
  -->
 
 	<script>
-	
 		function start() {
-			
-			
-			
+
+			$.ajax({
+
+				type : "get",
+				url : "/sat0613Answer/test?cmd=ajax4",
+				data : {"name" : "ajaxTest4"},
+				contentType : 'text/plain; charset=UTF-8',
+				dataType : "text"
+
+			}).done(function(result) {
+				alert(result);
+			}).fail(function(result) {
+				alert("실패");
+			});
+
 		}
-		
 	</script>
-	
+
 	<a href="ajaxTest5.jsp">ajaxTest5로 이동</a>
 
 </body>

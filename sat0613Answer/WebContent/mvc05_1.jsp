@@ -28,8 +28,8 @@
 		<br/>
 		
 		
-		<form action="">
-			<input type="hidden" name="cmd" value="mvc01">
+		<form action="/sat0613Answer/test" method="post">
+			<input type="hidden" name="cmd" value="mvc05">
 			<button type="submit" class="btn btn-primary btn-block">mvc05버튼</button>
 		</form>
 

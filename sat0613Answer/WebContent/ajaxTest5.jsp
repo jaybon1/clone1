@@ -31,7 +31,20 @@
 	
 		function start() {
 			
-			
+			$.ajax({
+
+				type : "post",
+				url : "ajaxResponse2.jsp",
+				data : {"name" : "ajaxTest5"},
+				contentType : 'text/plain; charset=UTF-8',
+				dataType : "text"
+
+			}).done(function(result) {
+				alert(result);
+			}).fail(function(result) {
+				alert("실패");
+			});
+
 			
 		}
 		

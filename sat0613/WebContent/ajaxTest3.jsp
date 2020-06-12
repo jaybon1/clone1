@@ -29,7 +29,7 @@
 	
 	action이름은 Ajax3Action
 	
-	데이터를 Ajax3Action에서 출력해보세요.
+	데이터를 Ajax3Action에 데이터를 보내서 출력해보세요.
 	
  -->
 

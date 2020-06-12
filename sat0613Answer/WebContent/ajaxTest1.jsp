@@ -31,7 +31,19 @@
 	
 		function start() {
 			
-			
+			$.ajax({
+				
+				type: "get",
+				url: "ajaxResponse.jsp",
+				data : {"name" : "ajaxTest1"},
+				contentType : 'text/plain; charset=UTF-8',
+				dataType: "text"
+				
+			}).done(function(result) {
+				alert(result);
+			}).fail(function(result) {
+				alert("실패");
+			});
 			
 		}
 		

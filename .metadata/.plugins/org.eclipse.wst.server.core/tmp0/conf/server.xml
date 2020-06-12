@@ -153,9 +153,9 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="C:\src\clone1\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\src\clone1\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\sat0613" path="/sat0613" reloadable="true" source="org.eclipse.jst.jee.server:sat0613">
+      <Context docBase="C:\programming\git\clone1\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\programming\git\clone1\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\sat0613" path="/sat0613" reloadable="true" source="org.eclipse.jst.jee.server:sat0613">
 <Resource auth="Container" driverClassName="oracle.jdbc.driver.OracleDriver" maxIdle="10" maxTotal="20" maxWaitMillis="-1" name="jdbc/myoracle" password="bitc5600" type="javax.sql.DataSource" url="jdbc:oracle:thin:@localhost:1521:xe" username="cos"/>
-</Context><Context docBase="C:\src\clone1\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\sat0613Answer" path="/sat0613Answer" reloadable="true" source="org.eclipse.jst.jee.server:sat0613Answer">
+</Context><Context docBase="C:\programming\git\clone1\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\sat0613Answer" path="/sat0613Answer" reloadable="true" source="org.eclipse.jst.jee.server:sat0613Answer">
 <Resource auth="Container" driverClassName="oracle.jdbc.driver.OracleDriver" maxIdle="10" maxTotal="20" maxWaitMillis="-1" name="jdbc/myoracle" password="bitc5600" type="javax.sql.DataSource" url="jdbc:oracle:thin:@localhost:1521:xe" username="cos"/>
 </Context></Host>
     </Engine>

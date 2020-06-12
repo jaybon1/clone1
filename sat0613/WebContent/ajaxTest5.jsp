@@ -23,7 +23,7 @@
 	contentType : 'text/plain; charset=UTF-8',
 	dataType : "text"
 	
-	ajaxResponse2.jsp로  데이터를 보내보세요.
+	ajaxResponse2.jsp로 데이터를 보내서 출력해보세요.
 	
  -->
 

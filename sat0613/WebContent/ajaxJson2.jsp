@@ -11,7 +11,7 @@
 <body>
 
 	<button onclick="start()" type="button"
-		class="btn btn-primary btn-block">ajaxJson1버튼</button>
+		class="btn btn-primary btn-block">ajaxJson2버튼</button>
 
 <!-- 
 
@@ -31,6 +31,8 @@
 	
 	데이터를 다시 이 페이지로 받아보세요. (받을 데이터 = {"task" : "ajaxJson2return"}  )
 	
+	gson 사용
+	
  -->
 
 	<script>
@@ -42,8 +44,6 @@
 		}
 		
 	</script>
-	
-	<a href="ajaxJson2.jsp">ajaxJson2로 이동</a>
 
 </body>
 </html>

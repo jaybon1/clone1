@@ -1,6 +1,8 @@
 package com.test.sat0613Answer.action.testAction;
 
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -15,6 +17,9 @@ public class Mvc03Action implements Action {
 	public void execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		System.out.println(request.getParameter("today"));
+		
+		BufferedReader br = request.getReader();
+		System.out.println(br.readLine());
 		
 		RequestDispatcher dis = request.getRequestDispatcher("mvc03_2.jsp");
 		dis.forward(request, response);

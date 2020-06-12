@@ -17,6 +17,7 @@
 		<h1>mvc04_2 페이지 입니다</h1>
 		
 	<!-- today 세션값 출력하기 -->
+	${sessionScope.today}
 		
 	</div>
 	

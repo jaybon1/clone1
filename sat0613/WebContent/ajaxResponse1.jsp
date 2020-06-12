@@ -4,6 +4,6 @@
 <%
 
 // 여기에 코드를 작성하세요
-// "임꺽정"을 ajaxTest2.jsp로 보내보세요.
+// "ajaxTest2return"을 ajaxTest2.jsp로 보내보세요.
 
 %>

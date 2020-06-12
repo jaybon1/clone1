@@ -21,7 +21,7 @@
 	
 <%-- 	<%=request.getParameter("today")%> --%>
 
-<%-- 	${param.today} --%>
+	${param.today}
 	
 	</div>
 		
