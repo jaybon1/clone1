@@ -29,7 +29,8 @@
 		
 		
 		<form action="">
-			<button type="button" class="btn btn-primary btn-block">mvc03버튼</button>
+			<input type="hidden" name="cmd" value="">
+			<button type="submit" class="btn btn-primary btn-block">mvc03버튼</button>
 		</form>
 
 
