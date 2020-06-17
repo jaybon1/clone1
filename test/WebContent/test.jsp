@@ -14,20 +14,31 @@
 <br>
 
 <div class="container">
-  <form action="/test/test?cmd=inter" method="post">
+  <form>
     <div class="input-group mb-3">
-      <div class="input-group-prepend">
-        <span class="input-group-text">번역기</span>
-      </div>
-      <input name="X-Naver-Client-Id" value="LMRJKMfBfDZYA35262l9" type="hidden">
-      <input name="X-Naver-Client-Secret" value="R4OoO0jDuE" type="hidden">
-      <input name="source" value="ko" type="hidden">
-      <input name="target" value="en" type="hidden">
-      <input name="text" type="text" class="form-control" placeholder="검색어를 입력하세요">
-	  <input type="submit" value="번역하기">
-    </div>
+	    <div class="input-group-prepend">
+	        <span class="input-group-text">원본언어</span>
+	    </div>
+      
+		<select id="source" name="job">
+		    <option value="ko">한국어</option>
+		    <option value="en">영어</option>
+		    <option value="ja">일본어</option>
+		    <option value="zh-CN">중국어</option>
+		</select>
+	   	<div class="input-group-prepend">
+	       <span class="input-group-text">번역언어</span>
+	    </div>
+		<select id="target" name="job">
+		    <option value="en">영어</option>
+		    <option value="ja">일본어</option>
+		    <option value="zh-CN">중국어</option>
+		    <option value="ko">한국어</option>
+		</select>
+	      <input id="text" name="text" type="text" class="form-control" placeholder="검색어를 입력하세요">
+		  <input onclick="inter()" type="button" value="번역하기">
+	    </div>
   </form>
-<br>
 <br>
 <br>
 <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
@@ -35,30 +46,40 @@
 
 <br>
 <script type="text/javascript">
-	
-	var data = {
-		source: "ko",
-		target: "zh-CN",
-		text : "한국에 오신 것을 환영합니다. 제 이름은 김성수 입니다.",
-		ClientId: "LMRJKMfBfDZYA35262l9",
-		ClientSecret: "R4OoO0jDuE"
+
+function inter() {
+	if($("#text").val() == null || $("#text").val() == ""){
+		alert("검색어를 입력해주세요");
+		return;
 	}
 	
-	$.ajax({
+	var data = {
+			source: $("#source").val(),
+			target: $("#target").val(),
+			text : $("#text").val(),
+			ClientId: "LMRJKMfBfDZYA35262l9",
+			ClientSecret: "R4OoO0jDuE"
+		}
 		
-		url: "/test/test?cmd=inter",
-		type: "post",
-		data: data,
-		ContentType: "application/x-www-form-urlencoded; charset=UTF-8",
-		dataType : "json"
-		
-	}).done(function(res) {
-		
-		alert(res.message.result.translatedText);
-		
-	}).fail(function(error) {
-		alert("실패");
-	});
+		$.ajax({
+			
+			url: "/test/test?cmd=inter",
+			type: "post",
+			data: data,
+			ContentType: "application/x-www-form-urlencoded; charset=UTF-8",
+			dataType : "json"
+			
+		}).done(function(res) {
+			
+			$("#comment").empty();
+			$("#comment").append(res.message.result.translatedText);
+			
+		}).fail(function(error) {
+			alert("실패");
+		});	
+}
+	
+
 
 </script>
 
