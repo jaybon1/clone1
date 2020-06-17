@@ -10,6 +10,7 @@
 </head>
 <body>
 
+
 	<button onclick="start()" type="button"
 		class="btn btn-primary btn-block">ajaxJson1버튼</button>
 
@@ -56,6 +57,7 @@
 	</script>
 	
 	<a href="ajaxJson2.jsp">ajaxJson2로 이동</a>
+
 
 </body>
 </html>
