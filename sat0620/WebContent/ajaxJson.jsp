@@ -17,14 +17,15 @@
 	function ajaxTest() {
 		
 		var a = {
-				name :"가나다"
+				name : "가나다"
 		}
 		
-		console.log(JSON.stringify(a));
+// 		console.log(JSON.stringify(a));
+		
 		$.ajax({
 			
 			url: "/sat0620/json",
-			data : JSON.stringify(a),
+			data : a,
 			type: "post",
 			dataType:"json"
 			

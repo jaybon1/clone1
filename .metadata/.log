@@ -6126,3 +6126,105 @@ java.io.IOException: Unable to resolve plug-in "org.telosys.tools.eclipse.plugin
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-19 13:52:25.850
 !MESSAGE executing callback sts4.classpath.EpXCMaeJ SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-19 14:57:26.357
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.EpXCMaeJ
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-19 14:57:26.364
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.EpXCMaeJ
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-19 14:57:26.371
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-19 14:57:26.378
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.EpXCMaeJ => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-19 15:25:04.271
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-19 15:25:04.277
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@3e754d56[org.springframework.tooling.boot.ls:1.15.0.202001210741(id=631)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-19 15:25:04.284
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-19 15:25:05.881
+!MESSAGE Boot LS startup time from start to initialized: 1590ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-19 15:25:05.906
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.kzOPpvGVisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-19 15:25:05.913
+!MESSAGE subscribing to classpath changes: sts4.classpath.kzOPpvGV isBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-19 15:25:05.920
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-19 15:25:05.928
+!MESSAGE subsribers = {sts4.classpath.kzOPpvGV=Send Classpath Notifications(3455)}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-19 15:25:05.937
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-19 15:25:05.953
+!MESSAGE project sat0620 ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-19 15:25:05.960
+!MESSAGE project Servers ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-19 15:25:05.966
+!MESSAGE Preparing classpath changed notification sat0620
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-19 15:25:05.972
+!MESSAGE project Servers SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-19 15:25:05.978
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-19 15:25:05.984
+!MESSAGE project blog ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-19 15:25:05.990
+!MESSAGE classpath=57 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-19 15:25:05.996
+!MESSAGE project sat0613Answer ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-19 15:25:06.002
+!MESSAGE buffering callback sts4.classpath.kzOPpvGV sat0620 false 57
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-19 15:25:06.008
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-19 15:25:06.014
+!MESSAGE Preparing classpath changed notification blog
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-19 15:25:06.019
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.kzOPpvGV => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-19 15:25:06.026
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-19 15:25:06.033
+!MESSAGE classpath=60 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-19 15:25:06.041
+!MESSAGE buffering callback sts4.classpath.kzOPpvGV blog false 60
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-19 15:25:06.047
+!MESSAGE Preparing classpath changed notification sat0613Answer
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-19 15:25:06.053
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-19 15:25:06.059
+!MESSAGE classpath=57 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-19 15:25:06.067
+!MESSAGE buffering callback sts4.classpath.kzOPpvGV sat0613Answer false 57
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-19 15:25:06.073
+!MESSAGE executing callback sts4.classpath.kzOPpvGV 3 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-19 15:25:06.096
+!MESSAGE executing callback sts4.classpath.kzOPpvGV SUCCESS [done]
