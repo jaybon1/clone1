@@ -41,7 +41,7 @@ public class JsonServlet extends HttpServlet {
 		
 		// System.out.println(request.getParameter("name"));
 		
-		BufferedReader br = request.getReader();
+		BufferedReader br = request.getReader(); // JSON.stringify(객체)를 이용해서 받을때, 문자열
 		System.out.println(br.readLine());
 		
 		
